@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.Button?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0"
+            prefWidth="1000.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.project.hrpayrollsystem.EmployeeManagementController"
+            stylesheets="@../css/EmployeeManagement.css">
+    <!--Back Button-->
+    <Button fx:id="backButton" layoutX="900.0" layoutY="20.0" mnemonicParsing="false" text="Back" onAction="#goBack"/>
+    <!--Table Layout-->
+    <TableView fx:id="employeeTable" layoutX="50.0" layoutY="50.0" prefHeight="500.0" prefWidth="900.0">
+        <!-- Columns -->
+        <columns>
+            <TableColumn fx:id="firstNameColumn" prefWidth="150.0" text="First Name"/>
+            <TableColumn fx:id="lastNameColumn" prefWidth="150.0" text="Last Name"/>
+            <TableColumn fx:id="departmentColumn" prefWidth="200.0" text="Department"/>
+            <TableColumn fx:id="wageColumn" prefWidth="75.0" text="Wage"/>
+            <TableColumn fx:id="hoursColumn" prefWidth="100.0" text="Hours Worked"/>
+            <TableColumn fx:id="bonusColumn" prefWidth="125.0" text="Bonus"/>
+        </columns>
+    </TableView>
+    <!--Buttons-->
+    <Button fx:id="addEmployee" layoutX="50.0" layoutY="20.0" mnemonicParsing="false" text="Add Employee" onAction="#addEmployeeMethod"/>
+    <Button fx:id="editEmployee" layoutX="220.0" layoutY="20.0" mnemonicParsing="false" text="Edit Employee" onAction="#editEmployeeMethod"/>
+    <Button fx:id="deleteEmployee" layoutX="390.0" layoutY="20.0" mnemonicParsing="false" text="Delete Employee" onAction="#deleteEmployeeMethod"/>
+
+</AnchorPane>

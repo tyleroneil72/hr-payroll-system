@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" stylesheets="@../css/AddEmployee.css"
+            xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.project.hrpayrollsystem.EditEmployeeController">
+
+    <VBox fx:id="box" alignment="CENTER" layoutX="262.0" layoutY="108.0" prefHeight="385.0" prefWidth="476.0" spacing="20">
+        <padding>
+            <Insets bottom="20" left="20" right="20" top="20" />
+        </padding>
+
+        <Label styleClass="title-text" text="Edit Employee" />
+
+        <HBox alignment="CENTER" spacing="10">
+            <Label text="First Name:" />
+            <TextField fx:id="firstNameField" />
+        </HBox>
+
+        <HBox alignment="CENTER" spacing="10">
+            <Label text="Last Name:" />
+            <TextField fx:id="lastNameField" />
+        </HBox>
+
+        <HBox alignment="CENTER" spacing="10">
+            <Label text="Department:" />
+            <ComboBox fx:id="departmentComboBox">
+                <!-- Add department options -->
+                <items>
+                    <FXCollections fx:factory="observableArrayList">
+                        <String fx:value="Development Team" />
+                        <String fx:value="Accounting" />
+                        <String fx:value="Human Resources (HR)" />
+                        <String fx:value="Marketing" />
+                        <String fx:value="Sales" />
+                        <String fx:value="Information Technology (IT)" />
+                        <String fx:value="Quality Assurance (QA)" />
+                        <String fx:value="Project Management" />
+                        <String fx:value="Research and Development (R&amp;D)" />
+                    </FXCollections>
+                </items>
+            </ComboBox>
+        </HBox>
+
+        <HBox alignment="CENTER" spacing="10">
+            <Label text="Wage:" />
+            <TextField fx:id="wageField" />
+        </HBox>
+        <HBox alignment="CENTER" spacing="10">
+            <Label text="Hours:" />
+            <TextField fx:id="hoursField" />
+        </HBox>
+        <HBox alignment="CENTER" spacing="10">
+            <Button onAction="#editEmployee" text="Save Edit" />
+            <Button fx:id="backButton" onAction="#goBack" text="Back" />
+        </HBox>
+
+    </VBox>
+</AnchorPane>

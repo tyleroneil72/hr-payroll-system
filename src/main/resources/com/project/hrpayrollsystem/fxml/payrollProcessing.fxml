@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" stylesheets="@../css/PayrollProcessing.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.hrpayrollsystem.PayrollProcessingController">
+
+    <!-- Title Section -->
+    <VBox alignment="CENTER" spacing="10" />
+
+    <!-- Main Content -->
+    <VBox fx:id="vBox" alignment="CENTER" layoutY="50" spacing="10">
+        <ComboBox fx:id="employeeComboBox" />
+
+        <Label fx:id="totalSalaryLabel" />
+
+        <Label fx:id="taxRateLabel" />
+
+        <Label fx:id="taxesLabel" />
+
+        <Label fx:id="deductionsLabel" />
+
+        <HBox alignment="CENTER" spacing="10">
+            <Label fx:id="bonusesLabel" />
+            <ComboBox fx:id="bonusComboBox">
+                <!-- Add bonus options -->
+                <items>
+                    <FXCollections fx:factory="observableArrayList">
+                        <String fx:value="None" />
+                        <String fx:value="$1000" />
+                        <String fx:value="$5000" />
+                        <String fx:value="$10000" />
+                    </FXCollections>
+                </items>
+            </ComboBox>
+        </HBox>
+    </VBox>
+
+    <VBox alignment="CENTER" layoutY="100" spacing="10">
+        <Label fx:id="chartLabel" styleClass="title-desc" text="Money Distribution" visible="false" />
+        <PieChart fx:id="moneyDistributionChart" prefHeight="400.0" prefWidth="400.0" />
+    </VBox>
+
+    <Label layoutX="180.0" layoutY="21.0" styleClass="title-label" text="Payroll Processing and Reports" />
+    <Label layoutX="427.0" layoutY="101.0" styleClass="title-desc" text="Please Select an Employee" />
+
+    <Button fx:id="backButton" layoutX="461.0" layoutY="484.0" onAction="#goBack" text="Back" />
+
+</AnchorPane>

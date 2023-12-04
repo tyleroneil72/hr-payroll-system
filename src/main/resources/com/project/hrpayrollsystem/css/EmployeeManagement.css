@@ -1,0 +1,27 @@
+.root {
+    -fx-background-color: #f4f4f4; /* Light gray background */
+}
+
+/* Style for the TableView */
+#employeeTable {
+    -fx-table-cell-border-color: derive(-fx-control-inner-background, -10%);
+    -fx-table-header-border-color: derive(-fx-control-inner-background, -10%);
+}
+
+/* Style for the TextFields */
+#firstNameField, #lastNameField, #departmentField {
+    -fx-prompt-text-fill: derive(-fx-control-inner-background, -30%);
+    -fx-background-color: #ffffff; /* White background */
+}
+
+#backButton, #addEmployee, #deleteEmployee, #editEmployee {
+    -fx-background-color: #3498db; /* Blue */
+    -fx-text-fill: white;
+    /*-fx-padding: 10px 20px;*/
+    -fx-border-radius: 5px;
+    -fx-cursor: hand;
+}
+
+#backButton:hover, #addEmployee:hover, #deleteEmployee:hover, #editEmployee:hover {
+    -fx-background-color: #2980b9; /* Darker Blue */
+}

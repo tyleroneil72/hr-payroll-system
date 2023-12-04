@@ -1,0 +1,25 @@
+.title-text {
+    -fx-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -fx-font-size: 48px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #3498db;
+    -fx-padding: 0 0 -80px 0;
+    -fx-effect: dropshadow( gaussian , rgba(52,152,219,0.8) , 0,0,0,1 );
+}
+
+.menu-button {
+    -fx-font-size: 18px;
+    -fx-background-color: #3498db; /* Blue */
+    -fx-text-fill: white;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 5px;
+    -fx-cursor: hand;
+}
+
+.buttons-container {
+    -fx-padding: 0 0 80px 0;
+}
+
+.menu-button:hover {
+    -fx-background-color: #2980b9; /* Darker Blue */
+}
