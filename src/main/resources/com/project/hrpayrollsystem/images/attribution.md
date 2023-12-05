@@ -1,6 +1,6 @@
 # Attribution For Images
 
-## employees.png
+## [employees.png](https://github.com/tyleroneil72/hr-payroll-system/blob/main/src/main/resources/com/project/hrpayrollsystem/images/employees.png)
 <a href="https://www.flaticon.com/free-icons/man" title="man icons">Man icons created by Freepik - Flaticon</a>
 
 ## home.png
