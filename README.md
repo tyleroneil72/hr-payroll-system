@@ -7,7 +7,7 @@
 ## Description
 This project represents a Human Resources Payroll System developed in Java, utilizing JavaFX and Maven for its implementation. FXML and CSS were used for styling. Completed as part of an 'Application Development Using Java' course, the system facilitates employee management functionalities such as addition, editing, and deletion from the payroll. Additionally, it provides the capability to generate individual employee reports.
 
-Employing the Model View Controller (MVC) architecture, the system utilizes serialization to persistently store data within an `Employees.data` file. This ensures continuous data storage, allowing the application to retain information even after closure. 
+Employing the Model View Controller (MVC) architecture along with Object Oriented Programming (OOP) principles, the system utilizes serialization to persistently store data within an `Employees.data` file. This ensures continuous data storage, allowing the application to retain information even after closure. 
 
 ## Example
 ![report](https://github.com/tyleroneil72/hr-payroll-system/assets/43754564/6d6bea61-11bc-4511-a18b-8588bd708f55)
