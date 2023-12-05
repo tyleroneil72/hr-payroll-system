@@ -19,7 +19,7 @@ The project follows a standard Maven project structure. The `src/main/java` dire
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Attribution
-All images and icons are from [Flaticon](https://www.Flaticon.com), for more information check out the attribution.md file in the images folder.
+All images and icons are from [Flaticon](https://www.Flaticon.com), for more information check out the [attribution.md](https://github.com/tyleroneil72/hr-payroll-system/blob/main/src/main/resources/com/project/hrpayrollsystem/images/attribution.md) file in the images folder.
 
 ## Contact
 For any inquiries or questions, you can reach me at tyleroneildev@gmail.com
